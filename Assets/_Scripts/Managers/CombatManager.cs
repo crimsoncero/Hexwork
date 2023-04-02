@@ -31,15 +31,14 @@ public class CombatManager : StaticInstance<CombatManager>
 
     public bool CanMove(Vector2Int gridPos)
     {
-        if(0 <= gridPos.x && gridPos.x < Columns)
-        {
-            if(0 <= gridPos.y && gridPos.y < Rows)
-            {
-                return true;
-            }
-        }
-
-        return false;
+        if(0 > gridPos.x || gridPos.x >= Columns)
+            return false;
+        if (0 > gridPos.y || gridPos.y >= Rows)
+            return false;
+        
+        
+        
+        return true;
     }
 
     private void SetGridPos()

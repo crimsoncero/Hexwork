@@ -39,5 +39,5 @@ Material:
     m_Ints: []
     m_Floats: []
     m_Colors:
-    - _Enemy_Tile_Color: {r: 0, g: 0.3048806, b: 1, a: 0}
+    - _Enemy_Tile_Color: {r: 1, g: 1, b: 1, a: 0}
   m_BuildTextureStacks: []
