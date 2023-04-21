@@ -1,0 +1,208 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5e6fedc2472449cead18ef23b5cb30d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Library:
+  - m_Name: Idle
+    m_Hash: 1008081451
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Megaman_Idle
+      m_Hash: 1064944089
+      m_Sprite: {fileID: 1629317706, guid: 6a506e7475d48494fb56387d3f4a3e6f, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1629317706, guid: 6a506e7475d48494fb56387d3f4a3e6f, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 1
+  - m_Name: Phase
+    m_Hash: 813496783
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Megaman_Idle
+      m_Hash: 1064944089
+      m_Sprite: {fileID: 1629317706, guid: 6a506e7475d48494fb56387d3f4a3e6f, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1629317706, guid: 6a506e7475d48494fb56387d3f4a3e6f, type: 3}
+    - m_Name: Megaman_Phase_0
+      m_Hash: 463557997
+      m_Sprite: {fileID: -1521290723, guid: 6a506e7475d48494fb56387d3f4a3e6f, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1521290723, guid: 6a506e7475d48494fb56387d3f4a3e6f, type: 3}
+    - m_Name: Megaman_Phase_1
+      m_Hash: 749102587
+      m_Sprite: {fileID: 486291928, guid: 6a506e7475d48494fb56387d3f4a3e6f, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 486291928, guid: 6a506e7475d48494fb56387d3f4a3e6f, type: 3}
+    - m_Name: Megaman_Phase_2
+      m_Hash: 900674625
+      m_Sprite: {fileID: -1445818840, guid: 6a506e7475d48494fb56387d3f4a3e6f, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1445818840, guid: 6a506e7475d48494fb56387d3f4a3e6f, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 4
+  - m_Name: Bustershot
+    m_Hash: 677454299
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Megaman_Buster_0
+      m_Hash: 291141010
+      m_Sprite: {fileID: -1852734683, guid: 6a506e7475d48494fb56387d3f4a3e6f, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1852734683, guid: 6a506e7475d48494fb56387d3f4a3e6f, type: 3}
+    - m_Name: Megaman_Buster_1
+      m_Hash: 643646724
+      m_Sprite: {fileID: 2082599364, guid: 6a506e7475d48494fb56387d3f4a3e6f, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 2082599364, guid: 6a506e7475d48494fb56387d3f4a3e6f, type: 3}
+    - m_Name: Megaman_Buster_2
+      m_Hash: 1062474942
+      m_Sprite: {fileID: -1344480932, guid: 6a506e7475d48494fb56387d3f4a3e6f, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1344480932, guid: 6a506e7475d48494fb56387d3f4a3e6f, type: 3}
+    - m_Name: Megaman_Buster_3
+      m_Hash: 139666472
+      m_Sprite: {fileID: 318658738, guid: 6a506e7475d48494fb56387d3f4a3e6f, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 318658738, guid: 6a506e7475d48494fb56387d3f4a3e6f, type: 3}
+    - m_Name: Megaman_Buster_4
+      m_Hash: 372748683
+      m_Sprite: {fileID: -46996191, guid: 6a506e7475d48494fb56387d3f4a3e6f, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -46996191, guid: 6a506e7475d48494fb56387d3f4a3e6f, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 5
+  - m_Name: Throw
+    m_Hash: 240283187
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Megaman_Throw_0
+      m_Hash: 230884117
+      m_Sprite: {fileID: 1749777645, guid: 6a506e7475d48494fb56387d3f4a3e6f, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1749777645, guid: 6a506e7475d48494fb56387d3f4a3e6f, type: 3}
+    - m_Name: Megaman_Throw_1
+      m_Hash: 985936771
+      m_Sprite: {fileID: 888288882, guid: 6a506e7475d48494fb56387d3f4a3e6f, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 888288882, guid: 6a506e7475d48494fb56387d3f4a3e6f, type: 3}
+    - m_Name: Megaman_Throw_2
+      m_Hash: 600662585
+      m_Sprite: {fileID: -1689601353, guid: 6a506e7475d48494fb56387d3f4a3e6f, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1689601353, guid: 6a506e7475d48494fb56387d3f4a3e6f, type: 3}
+    - m_Name: Megaman_Throw_3
+      m_Hash: 348803759
+      m_Sprite: {fileID: 236169947, guid: 6a506e7475d48494fb56387d3f4a3e6f, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 236169947, guid: 6a506e7475d48494fb56387d3f4a3e6f, type: 3}
+    - m_Name: Megaman_Throw_4
+      m_Hash: 179226380
+      m_Sprite: {fileID: 373866499, guid: 6a506e7475d48494fb56387d3f4a3e6f, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 373866499, guid: 6a506e7475d48494fb56387d3f4a3e6f, type: 3}
+    - m_Name: Entry
+      m_Hash: 719368820
+      m_Sprite: {fileID: 0}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 0}
+    m_FromMain: 0
+    m_EntryOverrideCount: 6
+  - m_Name: Slash
+    m_Hash: 101673205
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Megaman_Slash_0
+      m_Hash: 956341941
+      m_Sprite: {fileID: 1003840830, guid: 6a506e7475d48494fb56387d3f4a3e6f, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1003840830, guid: 6a506e7475d48494fb56387d3f4a3e6f, type: 3}
+    - m_Name: Megaman_Slash_1
+      m_Hash: 235384355
+      m_Sprite: {fileID: -651766089, guid: 6a506e7475d48494fb56387d3f4a3e6f, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -651766089, guid: 6a506e7475d48494fb56387d3f4a3e6f, type: 3}
+    - m_Name: Megaman_Slash_2
+      m_Hash: 386858905
+      m_Sprite: {fileID: -576646458, guid: 6a506e7475d48494fb56387d3f4a3e6f, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -576646458, guid: 6a506e7475d48494fb56387d3f4a3e6f, type: 3}
+    - m_Name: Megaman_Slash_3
+      m_Hash: 537513743
+      m_Sprite: {fileID: 2099729952, guid: 6a506e7475d48494fb56387d3f4a3e6f, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 2099729952, guid: 6a506e7475d48494fb56387d3f4a3e6f, type: 3}
+    - m_Name: Megaman_Slash_4
+      m_Hash: 1047354028
+      m_Sprite: {fileID: -52295961, guid: 6a506e7475d48494fb56387d3f4a3e6f, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -52295961, guid: 6a506e7475d48494fb56387d3f4a3e6f, type: 3}
+    - m_Name: Megaman_Slash_5
+      m_Hash: 157968954
+      m_Sprite: {fileID: -1290658552, guid: 6a506e7475d48494fb56387d3f4a3e6f, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1290658552, guid: 6a506e7475d48494fb56387d3f4a3e6f, type: 3}
+    - m_Name: Megaman_Slash_6
+      m_Hash: 274938752
+      m_Sprite: {fileID: 1988907836, guid: 6a506e7475d48494fb56387d3f4a3e6f, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1988907836, guid: 6a506e7475d48494fb56387d3f4a3e6f, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 7
+  - m_Name: Hit
+    m_Hash: 580870305
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Megaman_Hit_0
+      m_Hash: 863834444
+      m_Sprite: {fileID: -1116111895, guid: 6a506e7475d48494fb56387d3f4a3e6f, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1116111895, guid: 6a506e7475d48494fb56387d3f4a3e6f, type: 3}
+    - m_Name: Megaman_Hit_1
+      m_Hash: 75112922
+      m_Sprite: {fileID: -1604995357, guid: 6a506e7475d48494fb56387d3f4a3e6f, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1604995357, guid: 6a506e7475d48494fb56387d3f4a3e6f, type: 3}
+    - m_Name: Megaman_Hit_2
+      m_Hash: 494104672
+      m_Sprite: {fileID: 968907937, guid: 6a506e7475d48494fb56387d3f4a3e6f, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 968907937, guid: 6a506e7475d48494fb56387d3f4a3e6f, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 3
+  - m_Name: Cast
+    m_Hash: 847910600
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Megaman_Cast_0
+      m_Hash: 442495577
+      m_Sprite: {fileID: 1912706007, guid: 6a506e7475d48494fb56387d3f4a3e6f, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1912706007, guid: 6a506e7475d48494fb56387d3f4a3e6f, type: 3}
+    - m_Name: Megaman_Cast_1
+      m_Hash: 760791759
+      m_Sprite: {fileID: 991189513, guid: 6a506e7475d48494fb56387d3f4a3e6f, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 991189513, guid: 6a506e7475d48494fb56387d3f4a3e6f, type: 3}
+    - m_Name: Megaman_Cast_2
+      m_Hash: 877761397
+      m_Sprite: {fileID: 1906472240, guid: 6a506e7475d48494fb56387d3f4a3e6f, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1906472240, guid: 6a506e7475d48494fb56387d3f4a3e6f, type: 3}
+    - m_Name: Megaman_Cast_3
+      m_Hash: 56009699
+      m_Sprite: {fileID: 733134515, guid: 6a506e7475d48494fb56387d3f4a3e6f, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 733134515, guid: 6a506e7475d48494fb56387d3f4a3e6f, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 4
+  m_PrimaryLibraryGUID: 
