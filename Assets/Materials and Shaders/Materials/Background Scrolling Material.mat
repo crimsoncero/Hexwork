@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Dissolve Mat
-  m_Shader: {fileID: -6465566751694194690, guid: 7dc93114d4612984684e526d4b3addc2, type: 3}
+  m_Name: Background Scrolling Material
+  m_Shader: {fileID: -6465566751694194690, guid: 39160ac2f4dfd194e8f15a4af917ee1c, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
@@ -20,16 +20,12 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - _Emission:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _EmissionTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 6a506e7475d48494fb56387d3f4a3e6f, type: 3}
+        m_Texture: {fileID: 2800000, guid: 9f7fd51f25c73db4d8e85ad518bd2225, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_eeda1a958de84ba38addd9ddd3d6ae84_Out_0:
+        m_Texture: {fileID: 2800000, guid: 9f7fd51f25c73db4d8e85ad518bd2225, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -46,7 +42,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Fade: 0.981
+    - _DirectionChangeInterval: 3
     m_Colors:
-    - _Color: {r: 0, g: 2.9960785, b: 1.0509804, a: 0}
+    - _Distance: {r: 2, g: 2, b: 0, a: 0}
+    - _Offset: {r: 0.02, g: 0.02, b: 0, a: 0}
+    - _Scroll_Speed_Rate: {r: 0, g: 0, b: 0, a: 0}
+    - _Tiling: {r: 2, g: 3, b: 0, a: 0}
   m_BuildTextureStacks: []
