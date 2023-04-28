@@ -4,36 +4,30 @@ using UnityEngine.UIElements;
 
 public class CombatManager : StaticInstance<CombatManager>
 {
-    public Grid Grid;
+    public Grid GridData;
     public int Rows;
     public int Columns;
+    public Transform GridOrigin;
 
 
-    public Vector2[,] GridPos;
-
- 
+    public GridManager Grid { get; private set; } 
 
     private void Start()
     {
-        GridPos = new Vector2[6, 3];
-        SetGridPos();
-        foreach(var pos in GridPos)
-        {
-            Debug.Log($"{pos.x}, {pos.y}");
-        }
+        
     }
 
 
     public Vector2 GetWorldPos(Vector2Int gridPos)
     {
-        return GridPos[gridPos.x, gridPos.y];
+        return Grid.GetWorldPos(gridPos);
     }
 
     public bool CanMove(Vector2Int gridPos)
     {
-        if(0 > gridPos.x || gridPos.x >= Columns)
+        if(0 > gridPos.x || gridPos.x >= Rows)
             return false;
-        if (0 > gridPos.y || gridPos.y >= Rows)
+        if (0 > gridPos.y || gridPos.y >= Columns)
             return false;
         
         
@@ -41,37 +35,9 @@ public class CombatManager : StaticInstance<CombatManager>
         return true;
     }
 
-    private void SetGridPos()
+    private void OnValidate()
     {
-        for(int i = 0; i < Columns; i++)
-        {
-            for(int j = 0; j < Rows; j++)
-            {
-                double x = 0, y = 0;
-                if(i < Columns / 2)
-                {
-                    x = Grid.cellSize[0] * (i - 2.5);
-                }
-                else if(i >= Columns / 2)
-                {
-                    x = Grid.cellSize[0] * (i - 2.5);
-                }
-
-                if (j < Rows / 2)
-                {
-                    y = Grid.cellSize[1] * (j - 1);
-                }
-                else if (j > Rows / 2)
-                {
-                    y = Grid.cellSize[1] * (j - 1);
-                }
-
-
-                GridPos[i, j] = new Vector2((float)x, (float)y);
-
-
-            }
-        }
+        Grid = new GridManager(new Vector2Int(Rows, Columns), GridData, GridOrigin.position);
     }
 
 }
