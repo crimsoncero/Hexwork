@@ -19,32 +19,41 @@
             "scaleInEditor": 4
         },
         "Palettes/BaseTileSet.tsx": {
-            "scaleInDock": 1
+            "scaleInDock": 1,
+            "scaleInEditor": 2
+        },
+        "Palettes/CollisionTileSet.tsx": {
+            "scaleInDock": 4,
+            "scaleInEditor": 5.5
         },
         "TestMap.tmx": {
             "scale": 3,
-            "selectedLayer": 1,
+            "selectedLayer": 3,
             "viewCenter": {
-                "x": 409.5,
-                "y": 170.16666666666669
+                "x": 444.3333333333333,
+                "y": 205.66666666666669
             }
         }
     },
     "last.externalTilesetPath": "C:/Users/crims/OneDrive/Documents/Projects/Assets/Sprites and Animations/Tilemap/Palettes",
-    "last.imagePath": "C:/Users/crims/Projects/Hexwork/Assets/Sprites and Animations/Tilemap",
+    "last.imagePath": "C:/Users/crims/Projects/Hexwork/Assets/Sprites and Animations/Tilemap/Palettes",
     "map.lastUsedFormat": "tmx",
     "map.layerDataFormat": null,
     "map.orientation": null,
     "map.renderOrder": null,
     "map.tileHeight": 16,
     "openFiles": [
-        "TestMap.tmx"
+        "TestMap.tmx",
+        "Palettes/BaseTileSet.tsx",
+        "Palettes/CollisionTileSet.tsx"
     ],
     "project": "TiledProject.tiled-project",
     "recentFiles": [
+        "Palettes/CollisionTileSet.tsx",
+        "Palettes/BaseTileSet.tsx",
         "TestMap.tmx",
-        "CollisionTileSet.tsx",
-        "BaseTileSet.tsx"
+        "BaseTileSet.tsx",
+        "CollisionTileSet.tsx"
     ],
     "tileset.lastUsedFilter": "Tiled tileset files (*.tsx *.xml)",
     "tileset.lastUsedFormat": "tsx"
