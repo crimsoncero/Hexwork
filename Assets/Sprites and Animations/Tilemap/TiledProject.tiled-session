@@ -28,10 +28,18 @@
         },
         "TestMap.tmx": {
             "scale": 3,
-            "selectedLayer": 3,
+            "selectedLayer": 4,
             "viewCenter": {
-                "x": 444.3333333333333,
-                "y": 205.66666666666669
+                "x": 442.3333333333333,
+                "y": 174.66666666666669
+            }
+        },
+        "Tilemaps/untitled.tmx": {
+            "scale": 3,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 375.66666666666663,
+                "y": 180.33333333333331
             }
         }
     },
@@ -42,13 +50,16 @@
     "map.orientation": null,
     "map.renderOrder": null,
     "map.tileHeight": 16,
+    "mapScene.enableWorlds": true,
     "openFiles": [
         "TestMap.tmx",
         "Palettes/BaseTileSet.tsx",
         "Palettes/CollisionTileSet.tsx"
     ],
     "project": "TiledProject.tiled-project",
+    "property.type": "string",
     "recentFiles": [
+        "Tilemaps/untitled.tmx",
         "Palettes/CollisionTileSet.tsx",
         "Palettes/BaseTileSet.tsx",
         "TestMap.tmx",
