@@ -3,7 +3,7 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "Palettes/DecorationsTileSet.tsx",
+    "activeFile": "TestMap.tmx",
     "expandedProjectPaths": [
         ".",
         "Palettes"
@@ -34,8 +34,8 @@
             "scale": 2,
             "selectedLayer": 3,
             "viewCenter": {
-                "x": 437.75,
-                "y": 155.25
+                "x": 437.25,
+                "y": 154.75
             }
         },
         "Tilemaps/untitled.tmx": {
@@ -64,10 +64,10 @@
     "project": "TiledProject.tiled-project",
     "property.type": "string",
     "recentFiles": [
-        "TestMap.tmx",
-        "Palettes/BaseTileSet.tsx",
-        "Palettes/CollisionTileSet.tsx",
         "Palettes/DecorationsTileSet.tsx",
+        "Palettes/CollisionTileSet.tsx",
+        "Palettes/BaseTileSet.tsx",
+        "TestMap.tmx",
         "Tilemaps/untitled.tmx",
         "BaseTileSet.tsx",
         "CollisionTileSet.tsx"
