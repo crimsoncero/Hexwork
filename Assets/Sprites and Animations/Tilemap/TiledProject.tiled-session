@@ -5,8 +5,8 @@
     },
     "activeFile": "Palettes/DecorationsTileSet.tsx",
     "expandedProjectPaths": [
-        "Palettes",
-        "."
+        ".",
+        "Palettes"
     ],
     "file.lastUsedOpenFilter": "All Files (*)",
     "fileStates": {
@@ -20,7 +20,7 @@
         },
         "Palettes/BaseTileSet.tsx": {
             "scaleInDock": 1,
-            "scaleInEditor": 2
+            "scaleInEditor": 4
         },
         "Palettes/CollisionTileSet.tsx": {
             "scaleInDock": 2,
@@ -28,14 +28,14 @@
         },
         "Palettes/DecorationsTileSet.tsx": {
             "scaleInDock": 1,
-            "scaleInEditor": 1
+            "scaleInEditor": 4
         },
         "TestMap.tmx": {
-            "scale": 4,
-            "selectedLayer": 4,
+            "scale": 2,
+            "selectedLayer": 3,
             "viewCenter": {
-                "x": 438.75,
-                "y": 155.5
+                "x": 437.75,
+                "y": 155.25
             }
         },
         "Tilemaps/untitled.tmx": {
