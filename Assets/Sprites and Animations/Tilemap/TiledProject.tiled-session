@@ -3,10 +3,8 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "TestMap.tmx",
+    "activeFile": "",
     "expandedProjectPaths": [
-        ".",
-        "Palettes"
     ],
     "file.lastUsedOpenFilter": "All Files (*)",
     "fileStates": {
@@ -32,10 +30,10 @@
         },
         "TestMap.tmx": {
             "scale": 2,
-            "selectedLayer": 3,
+            "selectedLayer": 2,
             "viewCenter": {
-                "x": 437.25,
-                "y": 154.75
+                "x": 384.25,
+                "y": 192.75
             }
         },
         "Tilemaps/untitled.tmx": {
@@ -56,10 +54,6 @@
     "map.tileHeight": 16,
     "mapScene.enableWorlds": true,
     "openFiles": [
-        "TestMap.tmx",
-        "Palettes/BaseTileSet.tsx",
-        "Palettes/CollisionTileSet.tsx",
-        "Palettes/DecorationsTileSet.tsx"
     ],
     "project": "TiledProject.tiled-project",
     "property.type": "string",
