@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "323a68270435a4a8",
+        "id": "71d7af52b8544bf6",
         "type": "tabs",
         "children": [
           {
-            "id": "39e647850882b51c",
+            "id": "c4c5147323e59edc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "To Do List.md",
+                "file": "Combat Demo - GDD.md",
                 "mode": "source",
                 "source": false
               }
@@ -64,6 +64,14 @@
               "type": "starred",
               "state": {}
             }
+          },
+          {
+            "id": "df1eaa3e1c206323",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
           }
         ]
       }
@@ -85,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "To Do List.md",
+                "file": "Combat Demo - GDD.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "To Do List.md",
+                "file": "Combat Demo - GDD.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "To Do List.md"
+                "file": "Combat Demo - GDD.md"
               }
             }
           }
@@ -146,8 +154,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "39e647850882b51c",
+  "active": "c4c5147323e59edc",
   "lastOpenFiles": [
-    "To Do List.md"
+    "Combat Demo - GDD.md",
+    "Brainstorm.md",
+    "Untitled.md"
   ]
 }
