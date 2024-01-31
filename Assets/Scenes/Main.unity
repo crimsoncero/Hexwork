@@ -1532,6 +1532,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9020309022643697261, guid: a78d0d3aac004744db536e0635c4fbf1, type: 3}
+      propertyPath: Rows
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9020309022643697261, guid: a78d0d3aac004744db536e0635c4fbf1, type: 3}
+      propertyPath: Columns
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 9020309022643697261, guid: a78d0d3aac004744db536e0635c4fbf1, type: 3}
       propertyPath: GridData
       value: 
       objectReference: {fileID: 541423844}
