@@ -2,18 +2,33 @@
 
 using UnityEngine;
 
-/// <summary>
-/// A Class to make using the 2D "Grid" component easier with units and other objects.
-/// </summary>
-/// <typeparam name="T"> The Object that is in each of the cells of the grid. </typeparam>
-public class Grid<T>
+
+
+
+
+
+
+public abstract class SuperGrid
 {
-    
-    // Static Grid direction Vectors:
+    // Grid Direction Vectors
     public static Vector2Int UP = new Vector2Int(-1, 0);
     public static Vector2Int DOWN = new Vector2Int(1, 0);
     public static Vector2Int RIGHT = new Vector2Int(0, 1);
     public static Vector2Int LEFT = new Vector2Int(0, -1);
+}
+
+
+
+
+
+/// <summary>
+/// A Class to make using the 2D "Grid" component easier with units and other objects.
+/// </summary>
+/// <typeparam name="T"> The Object that is in each of the cells of the grid. </typeparam>
+public class SuperGrid<T> : SuperGrid
+{
+   
+
 
     public Vector2[,] GridWorldPos { get; private set; }
     private T[,] _grid;
@@ -26,7 +41,7 @@ public class Grid<T>
     public int Columns { get { return _gridSize.y; } }
 
 
-    public Grid(Vector2Int gridSize, Grid gridData, Vector2 centerPos)
+    public SuperGrid(Vector2Int gridSize, Grid gridData, Vector2 centerPos)
     {
         _gridSize = gridSize;
         _gridData = gridData;

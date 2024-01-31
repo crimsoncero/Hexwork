@@ -2,6 +2,13 @@ using System;
 using UnityEngine;
 using UnityEngine.UIElements;
 
+
+public struct Tile
+{
+
+}
+
+
 public class CombatManager : StaticInstance<CombatManager>
 {
     public Grid GridData;
@@ -10,7 +17,9 @@ public class CombatManager : StaticInstance<CombatManager>
     public Transform GridOrigin;
 
 
-    public Grid Grid { get; private set; } 
+    
+
+    public SuperGrid<Tile> Grid { get; private set; } 
 
     private void Start()
     {
@@ -37,7 +46,7 @@ public class CombatManager : StaticInstance<CombatManager>
 
     private void OnValidate()
     {
-        Grid = new Grid(new Vector2Int(Rows, Columns), GridData, GridOrigin.position);
+        Grid = new SuperGrid<Tile>(new Vector2Int(Rows, Columns), GridData, GridOrigin.position);
     }
 
 }

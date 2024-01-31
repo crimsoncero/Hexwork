@@ -1,7 +1,6 @@
+
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using static UnityEngine.Rendering.DebugUI.Table;
 
 public class PlayerController : MonoBehaviour
 {
@@ -10,41 +9,27 @@ public class PlayerController : MonoBehaviour
 
 
     [SerializeField]
-    private Vector2Int _gridPos;
+    Vector2Int _gridPos;
 
-    private bool _canMove = true;
+    [SerializeField]
+    bool _canAct = true;
+
+    private InputMap _playerInput;
+
 
     // Start is called before the first frame update
     void Start()
     {
+        InitPlayerInput();
         _gridPos = new Vector2Int(1, 1);
         
     }
 
+   
+
     // Update is called once per frame
     void Update()
     {
-        if (_canMove)
-        {
-            if (Input.GetKeyDown(KeyCode.W))
-            {
-                Move(Grid.UP);
-            }
-            if (Input.GetKeyDown(KeyCode.S))
-            {
-                Move(Grid.DOWN);
-            }
-            if (Input.GetKeyDown(KeyCode.A))
-            {
-                Move(Grid.LEFT);
-            }
-            if (Input.GetKeyDown(KeyCode.D))
-            {
-                Move(Grid.RIGHT);
-            }
-        }
-    
-
        
     }
 
@@ -52,15 +37,46 @@ public class PlayerController : MonoBehaviour
 
     private void Move(Vector2Int dir)
     {
+        // Check if you can move right now.
+        if (!_canAct) return;
 
         Vector2Int newPos = new (_gridPos.x + dir.x, _gridPos.y + dir.y);
-
         if(CombatManager.Instance.CanMove(newPos))
         {
             if(Animator != null) Animator.SetTrigger("PhaseTrigger");
             _gridPos = newPos;
             Transform.position = CombatManager.Instance.GetWorldPos(_gridPos);
         }
+        StartCoroutine(ActionCooldown(0.1f));
+
+    }
+
+    private IEnumerator ActionCooldown(float seconds)
+    {
+        _canAct = false;
+
+        float normalizedTime = 0;
+        while (normalizedTime <= 1f)
+        {
+            normalizedTime += Time.deltaTime / seconds;
+            yield return null;
+        }
+
+        _canAct = true;
+    }
+
+    private void InitPlayerInput()
+    {
+        _playerInput = new InputMap();
+        _playerInput.Enable();
+        _playerInput.Combat.Enable();
+
+
+
+        _playerInput.Combat.Up.performed += up => Move(SuperGrid.UP);
+        _playerInput.Combat.Down.performed += down => Move(SuperGrid.DOWN);
+        _playerInput.Combat.Left.performed += left => Move(SuperGrid.LEFT);
+        _playerInput.Combat.Right.performed += right => Move(SuperGrid.RIGHT);
     }
 
 }
