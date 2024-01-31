@@ -28,19 +28,19 @@ public class PlayerController : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.W))
             {
-                Move(GridManager.UP);
+                Move(Grid.UP);
             }
             if (Input.GetKeyDown(KeyCode.S))
             {
-                Move(GridManager.DOWN);
+                Move(Grid.DOWN);
             }
             if (Input.GetKeyDown(KeyCode.A))
             {
-                Move(GridManager.LEFT);
+                Move(Grid.LEFT);
             }
             if (Input.GetKeyDown(KeyCode.D))
             {
-                Move(GridManager.RIGHT);
+                Move(Grid.RIGHT);
             }
         }
     

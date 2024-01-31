@@ -10,7 +10,7 @@ public class CombatManager : StaticInstance<CombatManager>
     public Transform GridOrigin;
 
 
-    public GridManager Grid { get; private set; } 
+    public Grid Grid { get; private set; } 
 
     private void Start()
     {
@@ -37,7 +37,7 @@ public class CombatManager : StaticInstance<CombatManager>
 
     private void OnValidate()
     {
-        Grid = new GridManager(new Vector2Int(Rows, Columns), GridData, GridOrigin.position);
+        Grid = new Grid(new Vector2Int(Rows, Columns), GridData, GridOrigin.position);
     }
 
 }

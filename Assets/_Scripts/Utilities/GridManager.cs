@@ -1,21 +1,22 @@
-using System.Collections;
-using UnityEngine;
-using UnityEngine.UIElements;
+/// Amit Breiman ///
 
-public class GridManager
+using UnityEngine;
+
+/// <summary>
+/// A Class to make using the 2D "Grid" component easier with units and other objects.
+/// </summary>
+/// <typeparam name="T"> The Object that is in each of the cells of the grid. </typeparam>
+public class Grid<T>
 {
+    
+    // Static Grid direction Vectors:
     public static Vector2Int UP = new Vector2Int(-1, 0);
     public static Vector2Int DOWN = new Vector2Int(1, 0);
     public static Vector2Int RIGHT = new Vector2Int(0, 1);
     public static Vector2Int LEFT = new Vector2Int(0, -1);
 
-
-
-
-
-
     public Vector2[,] GridWorldPos { get; private set; }
-    private Cell[,] _grid;
+    private T[,] _grid;
     private Grid _gridData;
     private Vector2Int _gridSize; //Rows and Columns;
     private Vector2 _centerPos;
@@ -25,12 +26,12 @@ public class GridManager
     public int Columns { get { return _gridSize.y; } }
 
 
-    public GridManager(Vector2Int gridSize, Grid gridData, Vector2 centerPos)
+    public Grid(Vector2Int gridSize, Grid gridData, Vector2 centerPos)
     {
         _gridSize = gridSize;
         _gridData = gridData;
         _centerPos = centerPos;
-        _grid = new Cell[Rows, Columns];
+        _grid = new T[Rows, Columns];
         GridWorldPos = InitWorldPos();
     }
 
@@ -113,47 +114,8 @@ public class GridManager
                 worldPos[i, j] = new Vector2(x, y);
             }
         }
-
-
-
-
-
-
         return worldPos;
     }
-
-    
-
-
 }
 
 
-public struct Cell
-{
-    // Cell characteristics
-    public bool isFriendly; // whether this is a panel of the player or the enemy.
-    public CellType type;
-    public CellCondition condition;
-
-    public GameObject gameObject; // The game object that is currently in the cell; Null if empty.
-
-    public Cell(bool isFriendly, CellType type, CellCondition condition) : this()
-    {
-        this.isFriendly = isFriendly;
-        this.type = type;
-        this.condition = condition;
-    }
-}
-
-
-public enum CellType
-{
-    Normal,
-}
-
-public enum CellCondition
-{
-    Normal,
-    Cracked,
-    Broken,
-}
