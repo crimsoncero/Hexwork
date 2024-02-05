@@ -2,12 +2,6 @@
 
 using UnityEngine;
 
-
-
-
-
-
-
 public abstract class SuperGrid
 {
     // Grid Direction Vectors
@@ -28,7 +22,6 @@ public abstract class SuperGrid
 public class SuperGrid<T> : SuperGrid
 {
    
-
 
     public Vector2[,] GridWorldPos { get; private set; }
     private T[,] _grid;
