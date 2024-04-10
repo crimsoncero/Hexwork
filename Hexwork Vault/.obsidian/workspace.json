@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "d1c0a86386bf83f4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Combat Demo - GDD.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -154,9 +167,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c4c5147323e59edc",
+  "active": "d1c0a86386bf83f4",
   "lastOpenFiles": [
+    "Units.md",
     "Combat Demo - GDD.md",
+    "Units Balance Sheet - Sheet1.csv",
     "Brainstorm.md",
     "Untitled.md"
   ]
