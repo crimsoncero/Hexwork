@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "71d7af52b8544bf6",
+        "id": "a5102a25f70fbe5b",
         "type": "tabs",
         "children": [
           {
-            "id": "c4c5147323e59edc",
+            "id": "586a8bba63204d22",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Combat Demo - GDD.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d1c0a86386bf83f4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Combat Demo - GDD.md",
+                "file": "Game Idea - Hexwork The Roguelike.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -106,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Combat Demo - GDD.md",
+                "file": "Game Idea - Hexwork The Roguelike.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Combat Demo - GDD.md",
+                "file": "Game Idea - Hexwork The Roguelike.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Combat Demo - GDD.md"
+                "file": "Game Idea - Hexwork The Roguelike.md"
               }
             }
           }
@@ -167,12 +154,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d1c0a86386bf83f4",
+  "active": "586a8bba63204d22",
   "lastOpenFiles": [
-    "Units.md",
     "Combat Demo - GDD.md",
+    "Game Idea - Hexwork The Roguelike.md",
+    "Units.md",
     "Units Balance Sheet - Sheet1.csv",
-    "Brainstorm.md",
-    "Untitled.md"
+    "Brainstorm.md"
   ]
 }
