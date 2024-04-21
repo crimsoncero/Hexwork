@@ -8,7 +8,6 @@ namespace CardEngine
 
         public Card (int id)
         {
-
             ID = id;
         }
     }
