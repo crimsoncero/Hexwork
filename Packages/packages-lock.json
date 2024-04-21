@@ -1,5 +1,11 @@
 {
   "dependencies": {
+    "com.seraph.cardengine": {
+      "version": "file:Card Engine",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
     "com.unity.2d.animation": {
       "version": "9.1.0",
       "depth": 1,

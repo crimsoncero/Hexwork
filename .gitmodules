@@ -1,0 +1,3 @@
+[submodule "Packages/Card Engine"]
+	path = Packages/Card Engine
+	url = https://github.com/crimsoncero/CardEngine.git
