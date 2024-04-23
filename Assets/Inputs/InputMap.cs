@@ -28,36 +28,45 @@ public partial class @InputMap: IInputActionCollection2, IDisposable
             ""id"": ""fc19e93a-90d3-4926-8683-f3c768c2b42e"",
             ""actions"": [
                 {
-                    ""name"": ""Up"",
+                    ""name"": ""Movement"",
+                    ""type"": ""Value"",
+                    ""id"": ""41cb8bdb-8164-47b3-8273-5dad5e4383c4"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Attack"",
                     ""type"": ""Button"",
-                    ""id"": ""bc63d81b-8d97-45bc-bfc9-f1136c339837"",
+                    ""id"": ""60b4f499-2a22-4fd7-afcb-70bb6224accd"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Down"",
+                    ""name"": ""Cast Left"",
                     ""type"": ""Button"",
-                    ""id"": ""747bfed7-259c-40e3-8cf3-8655a90c03c5"",
+                    ""id"": ""f82075a4-ba4a-4bf7-a138-af34932e35da"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Left"",
+                    ""name"": ""Cast Right"",
                     ""type"": ""Button"",
-                    ""id"": ""a8973b9d-0173-461e-8191-3b1cba391cfa"",
+                    ""id"": ""1bdc70f8-4a9d-4cdd-9dce-a0f873e98da5"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Right"",
+                    ""name"": ""Dash"",
                     ""type"": ""Button"",
-                    ""id"": ""9d71bee4-b33b-4775-9f42-372b15fb6118"",
+                    ""id"": ""c3d96a1d-eab2-46a8-8af0-4080da40b4f5"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
@@ -66,46 +75,156 @@ public partial class @InputMap: IInputActionCollection2, IDisposable
             ],
             ""bindings"": [
                 {
-                    ""name"": """",
-                    ""id"": ""adc52ecf-9358-401a-8916-96b351ad8590"",
+                    ""name"": ""Keyboard"",
+                    ""id"": ""61b174cf-9e0d-4c1e-aac4-aea2b25d023e"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""5b6b139c-d233-4ca6-82a1-d161d58588a5"",
                     ""path"": ""<Keyboard>/w"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Up"",
+                    ""action"": ""Movement"",
                     ""isComposite"": false,
-                    ""isPartOfComposite"": false
+                    ""isPartOfComposite"": true
                 },
                 {
-                    ""name"": """",
-                    ""id"": ""5916b9cd-11ca-4684-adb7-f9851b80f1af"",
+                    ""name"": ""down"",
+                    ""id"": ""1aea4068-eca3-4649-ab76-f0f72d67c069"",
                     ""path"": ""<Keyboard>/s"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Down"",
+                    ""action"": ""Movement"",
                     ""isComposite"": false,
-                    ""isPartOfComposite"": false
+                    ""isPartOfComposite"": true
                 },
                 {
-                    ""name"": """",
-                    ""id"": ""d508ac1f-97c7-40bc-b1eb-921c0da326ec"",
+                    ""name"": ""left"",
+                    ""id"": ""a5ce3826-e5e8-4c20-a7e0-ead91856cb2d"",
                     ""path"": ""<Keyboard>/a"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Left"",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""505e702a-6b2e-47ff-b14d-e06daf5e1d09"",
+                    ""path"": ""<Keyboard>/d"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""28fdfda7-641d-4c06-bcf1-3843c6cbfad9"",
+                    ""path"": ""<Gamepad>/leftStick"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
-                    ""id"": ""e9d1f32b-5e6d-4341-a5c4-d934c95587bd"",
-                    ""path"": ""<Keyboard>/d"",
+                    ""id"": ""4caa8102-1658-4e46-8e9a-a901a387e365"",
+                    ""path"": ""<Mouse>/leftButton"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Right"",
+                    ""action"": ""Attack"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""89c85088-2ada-4120-b73c-aa2f1eb02442"",
+                    ""path"": ""<Gamepad>/rightTrigger"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Attack"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""1ed0c7e8-01be-4d4b-8db9-52fbc8ca0fdb"",
+                    ""path"": ""<Keyboard>/q"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Cast Left"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""153c180b-ce0b-4c60-aa68-44a7d31ce030"",
+                    ""path"": ""<Gamepad>/leftShoulder"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Cast Left"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""7cb28dfe-a8ec-4620-a3f0-a79070770ab2"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Cast Right"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""00e94c22-f6d5-4d50-80c9-66cffa588415"",
+                    ""path"": ""<Gamepad>/rightShoulder"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Cast Right"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ac4cb4de-1d6d-4fef-b6f5-810686b8add6"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Dash"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""d31491fa-f52d-4fca-afa5-6c83e4ea3cdd"",
+                    ""path"": ""<Gamepad>/leftTrigger"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Dash"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -116,10 +235,11 @@ public partial class @InputMap: IInputActionCollection2, IDisposable
 }");
         // Combat
         m_Combat = asset.FindActionMap("Combat", throwIfNotFound: true);
-        m_Combat_Up = m_Combat.FindAction("Up", throwIfNotFound: true);
-        m_Combat_Down = m_Combat.FindAction("Down", throwIfNotFound: true);
-        m_Combat_Left = m_Combat.FindAction("Left", throwIfNotFound: true);
-        m_Combat_Right = m_Combat.FindAction("Right", throwIfNotFound: true);
+        m_Combat_Movement = m_Combat.FindAction("Movement", throwIfNotFound: true);
+        m_Combat_Attack = m_Combat.FindAction("Attack", throwIfNotFound: true);
+        m_Combat_CastLeft = m_Combat.FindAction("Cast Left", throwIfNotFound: true);
+        m_Combat_CastRight = m_Combat.FindAction("Cast Right", throwIfNotFound: true);
+        m_Combat_Dash = m_Combat.FindAction("Dash", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -181,18 +301,20 @@ public partial class @InputMap: IInputActionCollection2, IDisposable
     // Combat
     private readonly InputActionMap m_Combat;
     private List<ICombatActions> m_CombatActionsCallbackInterfaces = new List<ICombatActions>();
-    private readonly InputAction m_Combat_Up;
-    private readonly InputAction m_Combat_Down;
-    private readonly InputAction m_Combat_Left;
-    private readonly InputAction m_Combat_Right;
+    private readonly InputAction m_Combat_Movement;
+    private readonly InputAction m_Combat_Attack;
+    private readonly InputAction m_Combat_CastLeft;
+    private readonly InputAction m_Combat_CastRight;
+    private readonly InputAction m_Combat_Dash;
     public struct CombatActions
     {
         private @InputMap m_Wrapper;
         public CombatActions(@InputMap wrapper) { m_Wrapper = wrapper; }
-        public InputAction @Up => m_Wrapper.m_Combat_Up;
-        public InputAction @Down => m_Wrapper.m_Combat_Down;
-        public InputAction @Left => m_Wrapper.m_Combat_Left;
-        public InputAction @Right => m_Wrapper.m_Combat_Right;
+        public InputAction @Movement => m_Wrapper.m_Combat_Movement;
+        public InputAction @Attack => m_Wrapper.m_Combat_Attack;
+        public InputAction @CastLeft => m_Wrapper.m_Combat_CastLeft;
+        public InputAction @CastRight => m_Wrapper.m_Combat_CastRight;
+        public InputAction @Dash => m_Wrapper.m_Combat_Dash;
         public InputActionMap Get() { return m_Wrapper.m_Combat; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -202,34 +324,40 @@ public partial class @InputMap: IInputActionCollection2, IDisposable
         {
             if (instance == null || m_Wrapper.m_CombatActionsCallbackInterfaces.Contains(instance)) return;
             m_Wrapper.m_CombatActionsCallbackInterfaces.Add(instance);
-            @Up.started += instance.OnUp;
-            @Up.performed += instance.OnUp;
-            @Up.canceled += instance.OnUp;
-            @Down.started += instance.OnDown;
-            @Down.performed += instance.OnDown;
-            @Down.canceled += instance.OnDown;
-            @Left.started += instance.OnLeft;
-            @Left.performed += instance.OnLeft;
-            @Left.canceled += instance.OnLeft;
-            @Right.started += instance.OnRight;
-            @Right.performed += instance.OnRight;
-            @Right.canceled += instance.OnRight;
+            @Movement.started += instance.OnMovement;
+            @Movement.performed += instance.OnMovement;
+            @Movement.canceled += instance.OnMovement;
+            @Attack.started += instance.OnAttack;
+            @Attack.performed += instance.OnAttack;
+            @Attack.canceled += instance.OnAttack;
+            @CastLeft.started += instance.OnCastLeft;
+            @CastLeft.performed += instance.OnCastLeft;
+            @CastLeft.canceled += instance.OnCastLeft;
+            @CastRight.started += instance.OnCastRight;
+            @CastRight.performed += instance.OnCastRight;
+            @CastRight.canceled += instance.OnCastRight;
+            @Dash.started += instance.OnDash;
+            @Dash.performed += instance.OnDash;
+            @Dash.canceled += instance.OnDash;
         }
 
         private void UnregisterCallbacks(ICombatActions instance)
         {
-            @Up.started -= instance.OnUp;
-            @Up.performed -= instance.OnUp;
-            @Up.canceled -= instance.OnUp;
-            @Down.started -= instance.OnDown;
-            @Down.performed -= instance.OnDown;
-            @Down.canceled -= instance.OnDown;
-            @Left.started -= instance.OnLeft;
-            @Left.performed -= instance.OnLeft;
-            @Left.canceled -= instance.OnLeft;
-            @Right.started -= instance.OnRight;
-            @Right.performed -= instance.OnRight;
-            @Right.canceled -= instance.OnRight;
+            @Movement.started -= instance.OnMovement;
+            @Movement.performed -= instance.OnMovement;
+            @Movement.canceled -= instance.OnMovement;
+            @Attack.started -= instance.OnAttack;
+            @Attack.performed -= instance.OnAttack;
+            @Attack.canceled -= instance.OnAttack;
+            @CastLeft.started -= instance.OnCastLeft;
+            @CastLeft.performed -= instance.OnCastLeft;
+            @CastLeft.canceled -= instance.OnCastLeft;
+            @CastRight.started -= instance.OnCastRight;
+            @CastRight.performed -= instance.OnCastRight;
+            @CastRight.canceled -= instance.OnCastRight;
+            @Dash.started -= instance.OnDash;
+            @Dash.performed -= instance.OnDash;
+            @Dash.canceled -= instance.OnDash;
         }
 
         public void RemoveCallbacks(ICombatActions instance)
@@ -249,9 +377,10 @@ public partial class @InputMap: IInputActionCollection2, IDisposable
     public CombatActions @Combat => new CombatActions(this);
     public interface ICombatActions
     {
-        void OnUp(InputAction.CallbackContext context);
-        void OnDown(InputAction.CallbackContext context);
-        void OnLeft(InputAction.CallbackContext context);
-        void OnRight(InputAction.CallbackContext context);
+        void OnMovement(InputAction.CallbackContext context);
+        void OnAttack(InputAction.CallbackContext context);
+        void OnCastLeft(InputAction.CallbackContext context);
+        void OnCastRight(InputAction.CallbackContext context);
+        void OnDash(InputAction.CallbackContext context);
     }
 }
