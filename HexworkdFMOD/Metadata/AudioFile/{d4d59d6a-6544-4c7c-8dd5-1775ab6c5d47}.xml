@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{d4d59d6a-6544-4c7c-8dd5-1775ab6c5d47}">
+		<property name="assetPath">
+			<value>Large Fireball Cast B.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>3.2535147392290251</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{f6c7f46e-7ea8-4cb9-8c19-f640f4169eb2}</destination>
+		</relationship>
+	</object>
+</objects>
