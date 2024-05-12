@@ -12,6 +12,4 @@ public abstract class UnitData : ScriptableObject
 {
     public string Name = "";
     public Team Team = Team.Neutral;
-
-
 }
