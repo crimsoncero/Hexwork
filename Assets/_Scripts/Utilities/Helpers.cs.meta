@@ -1,10 +1,9 @@
 fileFormatVersion: 2
-guid: e8864a212c79f334687de61ce1f1e4c0
+guid: 251eb58e00857ba469586e1692ac0067
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences:
-  - <Data>k__BackingField: {fileID: 11400000, guid: 0c04da2748497124bad24b810bf0e2b1, type: 2}
+  defaultReferences: []
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

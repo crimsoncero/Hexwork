@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class CombatManager : MonoBehaviour
+public class CombatManager : Singleton<CombatManager>
 {
     [SerializeField] private SuperGrid2D _superGrid2D;
 
