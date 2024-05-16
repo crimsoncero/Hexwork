@@ -30,16 +30,14 @@ public class SuperGrid2D : MonoBehaviour
     public Vector3[,] Positions { get; private set; }
 
 
-    private float XMidIndex { get { return Columns / 2 + 1; } }
-    private float YMidIndex { get { return Rows / 2 + 1; } }
+    public float XMidIndex { get { return Columns / 2; } }
+    public float YMidIndex { get { return Rows / 2; } }
 
 
     private void Awake()
     {
         if(!_grid)
             _grid = GetComponent<Grid>();
-
-        SetPositions();
     }
 
     #if UNITY_EDITOR
@@ -55,7 +53,7 @@ public class SuperGrid2D : MonoBehaviour
     }
     #endif
 
-    private void SetPositions()
+    public void SetPositions()
     {
         Positions = new Vector3[Columns, Rows];
 
@@ -77,7 +75,7 @@ public class SuperGrid2D : MonoBehaviour
 
     private float FindX(int col)
     {
-        int index = col + 1;
+        int index = col;
 
         float x = transform.position.x;
         x += CellWidth / 2; // Shift to cell center
@@ -89,7 +87,7 @@ public class SuperGrid2D : MonoBehaviour
 
     private float FindY(int row)
     {
-        int index = row + 1;
+        int index = row;
 
         float y = transform.position.y;
         y += CellHeight / 2; // Shift to cell center

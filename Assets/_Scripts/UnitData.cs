@@ -8,7 +8,8 @@ public enum Team
     Enemy
 }
 
-public abstract class UnitData : ScriptableObject
+[CreateAssetMenu(fileName = "Unit Data", menuName = "Scriptable Objects/Data/Unit Data")]
+public class UnitData : ScriptableObject
 {
     public string Name = "";
     public Team Team = Team.Neutral;

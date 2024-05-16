@@ -9,6 +9,11 @@ public enum State
 }
 public abstract class Unit : MonoBehaviour
 {
+    [field: SerializeField]
+    public UnitData Data { get; set; }
+    [field: SerializeField]
+    public Vector2Int Position { get; set; }
     public State State { get; private set; } = State.Idle;
-    
+
+
 }

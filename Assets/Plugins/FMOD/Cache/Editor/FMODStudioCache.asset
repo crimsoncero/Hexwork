@@ -47,6 +47,53 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-6665685908034432160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: HexworkdFMOD/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638514598131294790
+  FileSizes:
+  - Name: Desktop
+    Value: 105984
+  Exists: 1
+--- !u!114 &-6581465267963884311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/New Folder/Fireball Cast
+  m_EditorClassIdentifier: 
+  Path: event:/New Folder/Fireball Cast
+  Guid:
+    Data1: -1876573180
+    Data2: 1292657217
+    Data3: 1797286590
+    Data4: -1115332289
+  Banks:
+  - {fileID: -6665685908034432160}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-3556004892057945217
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -147,17 +194,17 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: -1947506975392444291}
-  - {fileID: 5462219360232318723}
+  - {fileID: 4728843734313726525}
+  - {fileID: -6665685908034432160}
   EditorEvents:
-  - {fileID: -7366573987623755702}
-  - {fileID: 8640570235967271207}
+  - {fileID: -6581465267963884311}
+  - {fileID: 3004561352417753119}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 5462219360232318723}
+  - {fileID: -6665685908034432160}
   StringsBanks:
-  - {fileID: -1947506975392444291}
-  cacheTime: 638510800838118160
+  - {fileID: 4728843734313726525}
+  cacheTime: 638514598131294790
   cacheVersion: 131617
 --- !u!114 &380325527547808347
 MonoBehaviour:
@@ -213,6 +260,53 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &3004561352417753119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/New Folder/New Event
+  m_EditorClassIdentifier: 
+  Path: event:/New Folder/New Event
+  Guid:
+    Data1: 315868104
+    Data2: 1189398296
+    Data3: -485864572
+    Data4: -1416132333
+  Banks:
+  - {fileID: -6665685908034432160}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &4728843734313726525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: HexworkdFMOD/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638514598131294790
+  FileSizes:
+  - Name: Desktop
+    Value: 826
+  Exists: 1
 --- !u!114 &5462219360232318723
 MonoBehaviour:
   m_ObjectHideFlags: 0

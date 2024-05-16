@@ -10,7 +10,5 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9cf5ad6fb342c9d4bba19ea0cce333b7, type: 3}
-  m_Name: Spellsword Data
+  m_Name: Spellsword
   m_EditorClassIdentifier: 
-  Name: Spellsword
-  Team: 1
