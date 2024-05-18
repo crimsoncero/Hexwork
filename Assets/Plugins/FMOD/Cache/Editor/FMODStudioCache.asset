@@ -62,7 +62,7 @@ MonoBehaviour:
   Path: HexworkdFMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638514598131294790
+  lastModified: 638510800838113040
   FileSizes:
   - Name: Desktop
     Value: 105984
@@ -204,7 +204,7 @@ MonoBehaviour:
   - {fileID: -6665685908034432160}
   StringsBanks:
   - {fileID: 4728843734313726525}
-  cacheTime: 638514598131294790
+  cacheTime: 638510800838118160
   cacheVersion: 131617
 --- !u!114 &380325527547808347
 MonoBehaviour:
@@ -302,7 +302,7 @@ MonoBehaviour:
   Path: HexworkdFMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638514598131294790
+  lastModified: 638510800838118160
   FileSizes:
   - Name: Desktop
     Value: 826
